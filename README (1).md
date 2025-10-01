@@ -14,28 +14,6 @@ O processador possui:
 - Banco de registradores.  
 - Unidade de Controle com máquina de estados (FSM).  
 - ALU com instruções `ADD`, `SUB`, `AND`, `OR`.  
-- Multiplicador (`MUL`) via SPI.  
-- Barrel-shifter (`SHL`, `SHR`) via SPI.  
-- Testbench para validação automática (comparação expected vs. actual).  
-
----
-
-## Estrutura do Projeto
-
-```
-sim/
- ├── Isa.sv          # Definição das instruções, operações e pacotes
- ├── Spi.sv          # Interface SPI usada na comunicação
- ├── Alu.sv          # Unidade Aritmética e Lógica
- ├── Mul.sv          # Unidade multiplicadora (via SPI)
- ├── Bas.sv          # Unidade barrel-shifter (via SPI)
- ├── Processor.sv    # Processador principal
- ├── ProcessorTb.sv  # Testbench
- ├── sim.do          # Script de simulação (ModelSim)
- └── wave.do         # Configuração de waveform
-```
-
----
 
 ## Simulação
 
@@ -67,11 +45,3 @@ do wave.do
 run -all
 ```
 
----
-
-## Resultados
-
-- Instruções `ADD`, `SUB`, `AND`, `OR` testadas e validadas.  
-- Novas instruções `MUL`, `SHL`, `SHR` integradas via SPI.  
-- Banco de registradores inicializado pelo testbench com valores incrementais.  
-- Resultados observados no waveform confirmam execução correta.  
