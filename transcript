@@ -1,0 +1,97 @@
+# do sim.do
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work work 
+# Modifying modelsim.ini
+# work.ProcessorTb
+# ./Spi.sv 
+# ./Spi.sv ./Isa.sv 
+# ./Spi.sv ./Isa.sv ./Alu.sv ./Processor.sv 
+# ./Spi.sv ./Isa.sv ./Alu.sv ./Processor.sv ./ProcessorTb.sv 
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 03:37:54 on Oct 01,2025
+# vlog -reportprogress 300 -work work ./Spi.sv ./Isa.sv ./Alu.sv ./Processor.sv ./ProcessorTb.sv 
+# -- Compiling interface Spi
+# ** Warning: ./Spi.sv(26): (vlog-2186) SystemVerilog testbench feature
+# (randomization, coverage or assertion) detected in the design.
+# These features are only supported in Questasim.
+# ** Warning: ./Spi.sv(26): (vlog-2186) SystemVerilog testbench feature
+# (randomization, coverage or assertion) detected in the design.
+# These features are only supported in Questasim.
+# ** Warning: ./Spi.sv(30): (vlog-2186) SystemVerilog testbench feature
+# (randomization, coverage or assertion) detected in the design.
+# These features are only supported in Questasim.
+# -- Compiling package Isa
+# -- Compiling package Alu_sv_unit
+# -- Importing package Isa
+# -- Compiling module Alu
+# -- Compiling package Processor_sv_unit
+# -- Importing package Isa
+# -- Compiling module Processor
+# -- Compiling module ProcessorTb
+# 
+# Top level modules:
+# 	ProcessorTb
+# End time: 03:37:54 on Oct 01,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 3
+# vsim -voptargs="+acc" work.ProcessorTb 
+# Start time: 03:37:54 on Oct 01,2025
+# Loading sv_std.std
+# Loading work.Isa
+# Loading work.ProcessorTb
+# Loading work.Processor_sv_unit
+# Loading work.Processor
+# Loading work.Spi
+# Loading work.Alu_sv_unit
+# Loading work.Alu
+# ** Warning: (vsim-8311) System Verilog assertions are supported only in Questasim.
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: olock  Hostname: GUILHERME  ProcessID: 1580
+#           Attempting to use alternate WLF file "./wlft01j6q6".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft01j6q6
+# [NOOP]   100: instr[26] op=    rd=   0 rs1=   0 rs2=   0
+# ** Error: [FAIL]  1140: instr[25] op=   rd=1023 rs1=1023 rs2=1023 -> expected=000003ff actual=00000000
+#    Time: 1140 ps  Scope: ProcessorTb File: ./ProcessorTb.sv Line: 123
+# [PASS]  2180: instr[24] op=   rd=1022 rs1=1022 rs2=1022 -> 00000000
+# ** Error: [FAIL]  3220: instr[23] op=    rd=1021 rs1=1021 rs2=1021 -> expected=000007fa actual=00000000
+#    Time: 3220 ps  Scope: ProcessorTb File: ./ProcessorTb.sv Line: 123
+# ** Error: [FAIL]  4260: instr[22] op=   rd=1020 rs1=1020 rs2=1020 -> expected=000003fc actual=00000000
+#    Time: 4260 ps  Scope: ProcessorTb File: ./ProcessorTb.sv Line: 123
+# ** Error: [FAIL]  5300: instr[21] op=   rd=1018 rs1=1022 rs2=1019 -> expected=000003fb actual=00000000
+#    Time: 5300 ps  Scope: ProcessorTb File: ./ProcessorTb.sv Line: 123
+# ** Error: [FAIL]  6340: instr[20] op=    rd=1017 rs1=1022 rs2=1019 -> expected=000003fb actual=00000000
+#    Time: 6340 ps  Scope: ProcessorTb File: ./ProcessorTb.sv Line: 123
+# ** Error: [FAIL]  7380: instr[19] op=   rd=1016 rs1=1022 rs2=1019 -> expected=fffffc05 actual=00000000
+#    Time: 7380 ps  Scope: ProcessorTb File: ./ProcessorTb.sv Line: 123
+# [PASS]  8420: instr[18] op=   rd=1015 rs1=1022 rs2=1019 -> 00000000
+# [NOOP]  8520: instr[17] op=    rd=   0 rs1=   0 rs2=   0
+# ** Error: [FAIL]  9560: instr[16] op=   rd=1012 rs1=1014 rs2=1013 -> expected=000003f4 actual=00000000
+#    Time: 9560 ps  Scope: ProcessorTb File: ./ProcessorTb.sv Line: 123
+# ** Error: [FAIL] 10600: instr[15] op=    rd=1009 rs1=1011 rs2=1010 -> expected=000007e5 actual=00000000
+#    Time: 10600 ps  Scope: ProcessorTb File: ./ProcessorTb.sv Line: 123
+# ** Error: [FAIL] 11640: instr[14] op=   rd=1006 rs1=1008 rs2=1007 -> expected=000003ff actual=00000000
+#    Time: 11640 ps  Scope: ProcessorTb File: ./ProcessorTb.sv Line: 123
+# ** Error: [FAIL] 12680: instr[13] op=   rd=1003 rs1=1005 rs2=1004 -> expected=00000001 actual=00000000
+#    Time: 12680 ps  Scope: ProcessorTb File: ./ProcessorTb.sv Line: 123
+# [PASS] 13720: instr[12] op=   rd=1002 rs1=1012 rs2=1009 -> 00000000
+# [PASS] 14760: instr[11] op=   rd=1001 rs1=1006 rs2=1003 -> 00000000
+# [PASS] 15800: instr[10] op=   rd=1000 rs1=1012 rs2=1006 -> 00000000
+# [PASS] 16840: instr[ 9] op=    rd= 999 rs1=1009 rs2=1003 -> 00000000
+# ** Error: [FAIL] 17880: instr[ 8] op=    rd= 998 rs1= 995 rs2= 996 -> expected=000007c7 actual=00000000
+#    Time: 17880 ps  Scope: ProcessorTb File: ./ProcessorTb.sv Line: 123
+# ** Error: [FAIL] 18920: instr[ 7] op=    rd= 998 rs1= 997 rs2= 998 -> expected=000003e5 actual=00000000
+#    Time: 18920 ps  Scope: ProcessorTb File: ./ProcessorTb.sv Line: 123
+# ** Error: [FAIL] 19960: instr[ 6] op=   rd= 998 rs1= 995 rs2= 996 -> expected=000003e0 actual=00000000
+#    Time: 19960 ps  Scope: ProcessorTb File: ./ProcessorTb.sv Line: 123
+# [PASS] 21000: instr[ 5] op=   rd= 998 rs1= 997 rs2= 998 -> 00000000
+# ** Error: [FAIL] 22040: instr[ 4] op=   rd= 998 rs1= 995 rs2= 996 -> expected=000003e7 actual=00000000
+#    Time: 22040 ps  Scope: ProcessorTb File: ./ProcessorTb.sv Line: 123
+# ** Error: [FAIL] 23080: instr[ 3] op=   rd= 998 rs1= 997 rs2= 998 -> expected=000003e5 actual=00000000
+#    Time: 23080 ps  Scope: ProcessorTb File: ./ProcessorTb.sv Line: 123
+# ** Error: [FAIL] 24120: instr[ 2] op=   rd= 998 rs1= 995 rs2= 996 -> expected=ffffffff actual=00000000
+#    Time: 24120 ps  Scope: ProcessorTb File: ./ProcessorTb.sv Line: 123
+# ** Error: [FAIL] 25160: instr[ 1] op=   rd= 998 rs1= 997 rs2= 998 -> expected=000003e5 actual=00000000
+#    Time: 25160 ps  Scope: ProcessorTb File: ./ProcessorTb.sv Line: 123
+# [NOOP] 25260: instr[ 0] op=    rd=   0 rs1=   0 rs2=   0
+# End time: 03:47:19 on Oct 01,2025, Elapsed time: 0:09:25
+# Errors: 17, Warnings: 3
