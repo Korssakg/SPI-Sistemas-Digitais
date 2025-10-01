@@ -1,0 +1,187 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/olock/Desktop/test/Spi Sistemas Digitais lo/sim
+vAlu
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 DXx4 work 3 Isa 0 22 f4FQFnDiU>2?bek0Y;XT[0
+DXx4 work 11 Alu_sv_unit 0 22 hMd9bFYc;@BCDWRggj6@j3
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+31
+!i10b 1
+!s100 6kbTF<`3Teo0E;4R0:K;U0
+IUij4VlV<ZGAS?5PVSLM7>0
+!s105 Alu_sv_unit
+S1
+R0
+Z4 w1759298721
+Z5 8./Alu.sv
+Z6 F./Alu.sv
+L0 4
+Z7 OV;L;10.5b;63
+Z8 !s108 1759300674.000000
+Z9 !s107 ./ProcessorTb.sv|./Processor.sv|./Alu.sv|./Isa.sv|./Spi.sv|
+Z10 !s90 -reportprogress|300|-work|work|./Spi.sv|./Isa.sv|./Alu.sv|./Processor.sv|./ProcessorTb.sv|
+!i113 1
+Z11 o-work work
+Z12 tCvgOpt 0
+n@alu
+XAlu_sv_unit
+R1
+R2
+VhMd9bFYc;@BCDWRggj6@j3
+r1
+!s85 0
+31
+!i10b 1
+!s100 h_Bfnm`AB3Vn``XzdOF_O2
+IhMd9bFYc;@BCDWRggj6@j3
+!i103 1
+S1
+R0
+R4
+R5
+R6
+L0 2
+R7
+R8
+R9
+R10
+!i113 1
+R11
+R12
+n@alu_sv_unit
+XIsa
+R1
+Z13 !s110 1759300674
+!i10b 1
+!s100 13_Pj`aUTl`Bj4gWHd1VF2
+If4FQFnDiU>2?bek0Y;XT[0
+Vf4FQFnDiU>2?bek0Y;XT[0
+S1
+R0
+w1759299749
+8./Isa.sv
+F./Isa.sv
+L0 2
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+n@isa
+vProcessor
+R1
+R2
+DXx4 work 17 Processor_sv_unit 0 22 Hi@RmT23bKX?0dLajQSkU3
+R3
+r1
+!s85 0
+31
+!i10b 1
+!s100 `f;<GbblCf]o:YdHRYcnK0
+Ih;SGOESTP3VSh::z;:WOS1
+!s105 Processor_sv_unit
+S1
+R0
+Z14 w1759299992
+Z15 8./Processor.sv
+Z16 F./Processor.sv
+L0 7
+R7
+R8
+R9
+R10
+!i113 1
+R11
+R12
+n@processor
+XProcessor_sv_unit
+R1
+R2
+VHi@RmT23bKX?0dLajQSkU3
+r1
+!s85 0
+31
+!i10b 1
+!s100 m`>Jcg_5i4>LI]gfFV:ZR3
+IHi@RmT23bKX?0dLajQSkU3
+!i103 1
+S1
+R0
+R14
+R15
+R16
+L0 2
+R7
+R8
+R9
+R10
+!i113 1
+R11
+R12
+n@processor_sv_unit
+vProcessorTb
+R1
+R2
+R13
+!i10b 1
+!s100 3f1=kic=QM`iGAV7Y<FoQ0
+IoLU3cjUS_1=<IKDF20YMJ2
+R3
+!s105 ProcessorTb_sv_unit
+S1
+R0
+w1759300655
+8./ProcessorTb.sv
+F./ProcessorTb.sv
+L0 4
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+n@processor@tb
+YSpi
+R1
+R13
+!i10b 1
+!s100 oXJBjaDT9ZjYS^[:;@dz^0
+I6CjM7?Oh3oHUC1@5O0zLd2
+R3
+!s105 Spi_sv_unit
+S1
+R0
+w1759297917
+8./Spi.sv
+F./Spi.sv
+L0 3
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+n@spi
