@@ -16,7 +16,7 @@ module Alu(
     int counter_out;                       // contador de transmissão
 
     // --------------------------------------------------
-    // Máquina de estados (FSM) - codificação one-hot
+    // Máquina de estados (FSM) 
     // --------------------------------------------------
     typedef enum logic [4:0] {
         ST_RECV_PREAMBLE = 5'b00001, // aguardando início
